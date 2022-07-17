@@ -347,3 +347,7 @@ template {
 [hidden] {
   display: none;
 }
+.container {
+  /* width: 1519px; */
+  padding: 0 10px;
+}

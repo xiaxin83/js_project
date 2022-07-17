@@ -4,9 +4,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/format.css">
   <title>Document</title>
 </head>
 <body>
+  <!-- 头部 -->
+ <div class="container header">
+  <div class="logo">
+    <h2>
+      RUNOOB.COM
+    </h2>
+  </div>
+  <div class="search">
+    <input type="search" placeholder="function" name="" id="">
+  </div>
+ </div>
+ <!-- 导航栏 -->
+ <div class="container nav">
+  <ul id="navItem">
 
+  </ul>
+ </div>
+ <style>
+.header {
+   height: 56px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 90px 0px;
+
+}
+.header .logo  {
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-right: 100px;
+  }
+.header .search {
+  height: 20px;
+}
+.header .search input {
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+.header .search input::placeholder {
+  padding-left: 5px;
+}
+.nav {
+  height: 50px;
+  background-color: #96B97D;
+
+}
+#navItem {
+
+   list-style: none;
+   line-height: 50px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   padding: 0 80px;
+   /* color: #fff; */
+}
+#navItem li {
+  /* float: left; */
+
+  margin: 0 10px;
+}
+#navItem li:hover {
+ color: #fff;
+ opacity: 0.4;
+ transition: 0.4s;
+}
+
+ </style>
+ <script>
+  var ul = document.getElementById("navItem");
+  var itemName = ['首页' , 'HTML' , ' CSS' , 'JAVASCRIPT' , 'VUE' , 'BOOTSTRAP' , 'NODEJS' , 'PYTHON3' , ' JAVA' , ' C' , ' C++' , ' C#' , ' GO' , ' SQL' , ' LINUX',  ' JQUERY' , '  本地书签']
+  for (let i= 0; i<itemName.length;i++) {
+    let li = document.createElement("li");
+    let a = document.createElement("a");
+      a.innerText = itemName[i];
+      li.appendChild(a);
+      ul.appendChild(li);
+  }
+ </script>
 </body>
 </html>
