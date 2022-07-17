@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3528292 */
+  src: url('iconfont.woff2?t=1658061992470') format('woff2'),
+       url('iconfont.woff?t=1658061992470') format('woff'),
+       url('iconfont.ttf?t=1658061992470') format('truetype');
+}
+.tab .fa-list::before {
+  content: "\e6b8";
+  font-family: "iconfont";
+}
+.tab .fa-moon-0::before {
+  content: "\e658";
+  font-family: "iconfont";
+}
