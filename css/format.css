@@ -68,6 +68,9 @@ pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+li {
+  list-style: none;
+}
 
 /* Text-level semantics
    ========================================================================== */

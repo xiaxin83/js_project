@@ -1,0 +1,53 @@
+/* #header {
+    display: flex;
+    flex-direction: column;
+    
+} */
+#header .logo-search {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 100px;
+    justify-content: space-between;
+}
+ .logo-search h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
+ }
+ .logo-search i {
+    color: #96B97D;
+ }
+ 
+ .logo-search .search input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
+ }
+ .logo-search .search input::placeholder {
+    margin-left: 10px;
+ }
+ /* 导航栏 */
+ #header .nav {
+    height: 50px;
+    line-height: 50px;
+    margin-top: -12px;
+    background-color: #96B97D;
+ }
+ .nav .navItem {
+    display: flex;
+    text-overflow:ellipsis;
+    padding: 0 50px;
+    justify-content: space-between;
+    
+ }
+ .nav .navItem li {
+    cursor: pointer;
+ }
+ .nav .navItem li:hover {
+    color: #96B97D;
+    opacity: 0.4;
+    transition: 0.4s;
+ }
