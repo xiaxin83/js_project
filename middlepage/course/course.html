@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>JavaScript在线实例</h2>
+                <span>本教程包含了大量的 JavaScript 实例， 您可以点击 "尝试一下" 来在线查看实例。</span>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        <h2>我的第一个JavaScript程序</h2>
+                        <p id="demo">这是一个段落</p>
+                        <button onclick="displayDate()">显示日期</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function displayDate() {
+            var demo = document.querySelector("#demo");
+            demo.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>

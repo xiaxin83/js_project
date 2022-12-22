@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript if...Else语句
+                </h2>
+                <hr>
+                <p>条件语句用于基于不同的条件来执行不同的动作</p>
+                <hr>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <span>当时间小于20:00时，生成问候"Good day"</span>
+                    <div class="course">
+                     if (time < 20) {
+                        <br />
+                        x = "Good day"
+                        <br />
+                     }
+                     <br />
+                     <p id="demo1"></p>
+                     <button onclick="goodDay1()">点击尝试</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function goodDay1() {
+           let p = document.getElementById('demo1');
+           let time = new Date().getHours();
+            if (time < 20) 
+              x = "Good Day！！！"
+              p.innerHTML = x
+            
+              
+        }
+    </script>
+</body>
+</html>

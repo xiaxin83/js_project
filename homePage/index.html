@@ -4,9 +4,139 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="../css/format.css">
+  <link rel="stylesheet" href="../css/middle.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  
+  <script src="../js/middle.js"></script>
+  <title>JavaScript教程 | 菜鸟教程</title>
 </head>
 <body>
+<div id="header">
+   <div class="logo-search">
+    <div class="logo">
+      <h2>RUNOOB <i>.COM</i></h2>
+    </div>
+    <div class="search">
+      <input type="search" placeholder="JavaScript">
+    </div>
+   </div>
+   <div class="nav">
+    <ul class="navItem"></ul>
+   </div>
+</div>
+    <div id="content">
+        <div id="left" class="com">
+            <div class="tab">
+              <i class="icon-list"></i>
+              <span>JavaScript教程</span>
+                <a href="">
+                  <i class="icon-moon"></i>
+                </a>
+            </div>
+            <div class="sidebar">
+                  <a href="../middlepage/course/course.html" target="iframe_a">JavaScript教程</a>
+                  <a href="../middlepage/brief/brief.html" target="iframe_a">JavaScript简介</a>
+                  <a href="../middlepage/usage/usage.html" target="iframe_a">JavaScript用法</a>
+                  <a href="javascript:;">JavaScript Chrome中运行</a>
+                  <a  href="../middlepage/output.html" target="iframe_a">JavaScript输出</a>
+                  <a href="javascript:;">JavaScript语法</a>
+                  <a href="javascript:;">JavaScript语句</a>
+                  <a href="javascript:;">JavaScript注释</a>
+                  <a href="../middlepage/dataType.html" target="iframe_a">JavaScript数据类型</a>
+                  <a href="../middlepage/variable.html" target="iframe_a">JavaScript变量</a>
+                  <a href="../middlepage/object.html" target="iframe_a">JavaScript对象</a>
+                  <a href="javascript:;" target="iframe_a">JavaScript函数</a>
+                  <a href="../middlepage/Scope.html" target="iframe_a">JavaScript作用域</a>
+                  <a href="../middlepage/event.html" target="iframe_a">JavaScript事件</a>
+                  <a href="javascript:;" target="iframe_a">JavaScript字符串</a>
+                  <a href="javascript:;" target="iframe_a">JavaScript运算符</a>
+                  <a href="../middlepage/compare.html" target="iframe_a">JavaScript比较</a>
+                  <a href="../middlepage/condition.html " target="iframe_a">JavaScript条件语句</a>
+                  <a href="../middlepage/switch.html" target="iframe_a">JavaScript switch 语句</a>
+                  <a href="javascript:;" target="iframe_a">JavaScript for 循环</a>
+                  <a href="javascript:;" target="iframe_a">JavaScript while 循环</a>
 
+
+                </div>
+        </div>
+        <div id="main" class="com">
+          <iframe src="../middlepage/course/course.html" frameborder="0"  name="iframe_a"></iframe>
+        </div>
+        <div id="right" class="com">
+          <div class="tab">
+            <i class="icon-list"></i>
+            <span>分类导航</span>
+          </div>
+          <div class="sidebar">
+                <a href="">HTML/CSS</a>
+                <a href="">JavaScript</a>
+                <a href="">服务端</a>
+                <a href="">数据库</a>
+                <a href="">数据分析</a>
+                <a href="">移动端</a>
+                <a href="">XML教程</a>
+                <a href="">ASP.NET</a>
+                <a href="">Web Service</a>
+                <a href="">开发工具</a>
+                <a href="">网站建设</a>
+          </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+ <style>
+    body {
+            min-width: 500px;
+        }
+        
+        #header {
+            width: 100%;
+            height: 150px;
+            line-height: 100px;
+            background-color: #F6F6F6;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background-color: rgb(228, 222, 198);
+        }
+
+        #footer {
+            clear: both;
+        }
+
+        #content {
+            padding-left: 200px;
+            padding-right: 150px;
+            overflow: hidden;
+        }
+
+        .com {
+            float: left;
+            height: 500px;
+            /* position: relative; */
+        }
+
+        #left {
+            width: 200px;
+            margin-left: -200px;
+            /* padding-left: 5px; */
+          }
+
+        #main {
+            width: 100%;
+            background-color: #ffff;
+        }
+
+        #right {
+            width: 150px;
+            margin-right: -150px;
+            background-color: #F6F6F6;
+        }
+
+ </style>
+ <script src="../js/index.js"></script>
 </body>
 </html>

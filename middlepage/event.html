@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript事件
+                </h2>
+                <hr>
+                <p>HTML 事件是发生在HTML元素上的事情</p>
+                <p>当在HTML页面中使用JavaScript时，JavaScript可以触发这些事件</p>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        <span><</span>
+                        <span>button</span>
+                        &nbsp&nbsp<span>onclick="getElementById('demo')".innnerHtml = Date()</span>
+                        <span>></span>
+                        <span>现在的时间是？</span>
+                        <span>< /button></span>
+                        <br />
+                        <p id="demo"></p>
+                        <button onclick="getTime()">点击尝试</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function getTime() {
+           document.getElementById('demo').innerHTML = Date();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>JavaScript: 直接写入 HTML 输出流</h2>
+                
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        <span>document</span>
+                        <span>.</span>
+                        <span>write</span>
+                        <span>(</span>
+                        <span>"</span>
+                        <span><</span>
+                        <span>h1</span>
+                        <span>></span>
+                        <span>这是一个标题</span>
+                        <span>< /</span>
+                        <span>h1>"</span>
+                        <span>)</span>
+                        <br />
+                        <span>document</span>
+                        <span>.</span>
+                        <span>write</span>
+                        <span>(</span>
+                        <span>"</span>
+                        <span><</span>
+                        <span>h1</span>
+                        <span>></span>
+                        <span>这是一个段落</span>
+                        <span>< /</span>
+                        <span>h1>"</span>
+                        <span>)</span>
+                        <p id="demo"></p>
+                        <button onclick="displayDate()">点击显示</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function displayDate() {
+            var demo = document.querySelector("#demo");
+            demo = document.write("<p>这是一个段落。</p>")
+        }
+    </script>
+</body>
+</html>

@@ -60,10 +60,16 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+ a {
+  text-decoration: none;
+ }
 
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+}
+li {
+  list-style: none;
 }
 
 /* Text-level semantics
@@ -346,4 +352,8 @@ template {
 
 [hidden] {
   display: none;
+}
+.container {
+  /* width: 1519px; */
+  padding: 0 10px;
 }

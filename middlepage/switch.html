@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript switch 语句 
+                </h2>
+                <hr>
+                <p>switch语句用于基于不同的条件来执行不同的动作</p>
+                <hr>
+            </div>
+            <div class="content">
+                    <h3>语法</h3>
+                    <span>请使用switch语句来选择要执行的多个代码块之一。</span>
+                    <div class="course">
+                      <span>switch(n)</span>
+                      <span>{</span>
+                            <span>case 1:</span>
+                             <span>执行代码块 1</span>
+                             <span>break;</span>
+                      <br>
+                      <p id="demo"></p>
+                      <button onclick="getSwich()">点击尝试</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function getSwich() {
+            var d=new Date().getDay(); 
+                switch (d) 
+                { 
+                case 0:x="今天是星期日"; 
+                break; 
+                case 1:x="今天是星期一"; 
+                break; 
+                case 2:x="今天是星期二"; 
+                break; 
+                case 3:x="今天是星期三"; 
+                break; 
+                case 4:x="今天是星期四"; 
+                break; 
+                case 5:x="今天是星期五"; 
+                break; 
+                case 6:x="今天是星期六"; 
+                break; 
+                }
+            let p = document.getElementById('demo');
+            p.innerHTML = x;
+        }
+    </script>
+</body>
+</html> 

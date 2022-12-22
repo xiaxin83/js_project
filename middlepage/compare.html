@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript比较和逻辑运算符
+                </h2>
+                <hr>
+                <p>比较和逻辑运算符用于测试true或者false</p>
+                <hr>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <span>如果变量age中的值小于18，则向变量voteable赋值"年龄太小"，否则赋值"年龄已达到"</span>
+                    <div class="course">
+                      <span>voteable = (age< 18)? "年龄太小"："年龄已达到"  </span>
+                      <br>
+                      <p id="demo"></p>
+                      <button onclick="getAge()">点击尝试</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function getAge() {
+           let p = document.getElementById('demo');
+           let age = 19;
+           let voteable = (age<18) ? "年龄太小" : "年龄已达到"
+           p.innerHTML = voteable
+        }
+    </script>
+</body>
+</html>

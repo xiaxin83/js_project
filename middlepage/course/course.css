@@ -1,0 +1,23 @@
+.container .title {
+    margin-bottom: 5px;
+}
+.container .content {
+    width: 95%;
+    height: 230px;
+    /* min-width: 230px; */
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(#fff,#e5eecc 100px);
+}
+.container .content h3 {
+    margin: 10px 0 0 5px;
+    margin-bottom: 5px;
+}
+.container .course {
+    width: 90%;
+    height: 150px;
+    overflow: auto;
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+}
