@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript变量
+                </h2>
+                
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                      var x=5;
+                      var y=6;
+                      var z=x+y
+                      <p class="demo"></p>
+                      <button onclick="getVariable()">点击尝试</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function getVariable() {
+            var x = 5;
+       var y = 6;
+       var z = x+y;
+       var p = document.querySelector(".demo");
+        p.innerHTML = z;
+        }
+    </script>
+</body>
+</html>

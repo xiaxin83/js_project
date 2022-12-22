@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript对象
+                </h2>
+                
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                        <p class="demo"></p>
+                        <button onclick="getObject()">点击尝试</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        function getObject() {
+            var p = document.querySelector(".demo")
+            var person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "blue"
+            }
+            p.innerHTML = person.firstName + " 现在 " + person.age + " 岁。";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                    JavaScript作用域
+                </h2>
+                <hr>
+                <span>作用域是可访问变量的集合</span>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        //此处不能调用 carName1变量
+                        <br />
+                        function myFunction() {
+                            <br />
+                            var carName1 变量
+                            <br />
+                        }
+                        <br />
+                        <p id="demo"></p>
+                        <p>局部变量在声明的函数外不可以访问</p>
+                        <br />
+
+                    <!-- <button onclick="myFunction()">点击尝试</button> -->
+                    </div>
+            </div>
+            <hr>
+             <div class="title">
+                <h2>
+                    JavaScript全局变量
+                </h2>
+                <span>变量在函数外定义，即为全局变量</span> <br>
+                <span>全局变量有 <strong>全局作用域:</strong>网页中所有的脚本都能够使用</span>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                       var carName2 = "Volvo"   <br />
+                       // 此处可调用 carName 变量 
+                       <br />
+                       function myFunction2() {
+                        <br />
+                        //函数可以调用carName2变量
+                        <br />
+                       }
+                       <br />
+                    <button>点击尝试</button>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+      myFunction()
+        function myFunction() {
+            var carName = "Volvo";
+        }
+        var p = document.querySelector("#demo");
+        p.innerHTML = "carName的类型是:" + typeof carName;
+    </script>
+</body>
+</html>

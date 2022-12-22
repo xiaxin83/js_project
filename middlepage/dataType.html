@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./course/course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="title">
+                <h2>
+                   JavaScript拥有动态类型
+                </h2>
+                <span>JavaScript拥有动态类型,这意味着相同的变量可用作不同的类型</span>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        var x;              // x 为 undefined
+                        var x = 5;          // 现在 x 为数字
+                        var x = "John";     // 现在 x 为字符串
+                    </div>
+            </div>
+            
+            <div class="title">
+                <span>变量的数据类型可以使用 typeof 操作符来查看：</span>
+            </div>
+            <div class="content">
+                    <h3>实例</h3>
+                    <div class="course">
+                        typeof "John"                // 返回 string
+                        <br />
+                        typeof 3.14                  // 返回 number
+                        <br />
+                        typeof false                 // 返回 boolean
+                        <br />
+                        typeof [1,2,3,4]             // 返回 object
+                        <br />
+                        typeof {name:'John', age:34} // 返回 object
+                        <br />
+                        <br />
+                        <button onclick="getDataType()">点击控制台查看</button>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function getDataType() {
+            console.log(typeof "John");
+            console.log(typeof 3.14);               
+            console.log(typeof false);               
+            console.log(typeof [1,2,3,4]);
+            console.log(typeof {name:'John', age:34});            
+        }
+    </script>
+</body>
+</html>
